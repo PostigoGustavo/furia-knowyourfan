@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfil do Fã da FURIA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Você é fã da FURIA?</h1>
+    <p>Preencha os dados para que possamos entender melhor o perfil dos fãs e suas interações.</p>
+    <form id="fan-form">
+      <!-- Dados pessoais -->
+      <div>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" required>
+      </div>
+      <div>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Sua idade" min="10" required>
+      </div>
+      
+      <!-- Redes sociais -->
+      <div>
+        <label for="redes">Redes Sociais (URL ou username):</label>
+        <input type="text" id="redes" name="redes" placeholder="Ex: @seu_usuario no Twitter">
+      </div>
+      
+      <!-- Interação com a FURIA -->
+      <div>
+        <label for="player">Qual jogador da FURIA você mais admira?</label>
+        <select id="player" name="player" required>
+          <option value="">Selecione um jogador</option>
+          <option value="yuurih">yuurih</option>
+          <option value="KSCERATO">KSCERATO</option>
+          <option value="FalleN">FalleN</option>
+          <option value="molodoy">molodoy</option>
+            <option value="skullz">skullz</option>
+        </select>
+      </div>
+      <div>
+        <label for="comoConhecer">Como você conheceu a FURIA?</label>
+        <textarea id="comoConhecer" name="comoConhecer" rows="3" placeholder="Conte-nos sua experiência..."></textarea>
+      </div>
+      
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="result" id="result" style="display: none;">
+      <h2>Seu Perfil</h2>
+      <div id="profile"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
